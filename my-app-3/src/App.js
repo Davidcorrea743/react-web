@@ -1,12 +1,13 @@
 import './App.css';
-import Contador from './components/Contador';
-import Lista from './components/Lista';
+import Formulario from './components/Formulario';
+
 
 function App() {
   return (
-    <div className="App">
-      <Contador />
-      <Lista />
+    <div  className='container mt-5'>
+      
+      <Formulario />
+
 
     </div>
   );
