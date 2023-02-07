@@ -41,7 +41,7 @@ const FormHook = () => {
 
                             placeholder="Ingrese nombre de titulo" className="form-control my-2"
 
-                        />
+                         />
 
                          {errors.titulo && <span className="text-danger text-small d-block mb-2">Campo Requerido</span>} 
 
