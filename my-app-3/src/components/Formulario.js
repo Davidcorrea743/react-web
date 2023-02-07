@@ -2,11 +2,13 @@ import React, {useState, Fragment} from 'react'
 
 const Formulario = () => {
 
+    // Acá se utiliza el hook useState para relacionar los datos de los input
     const [datos, setDatos] = useState({
         nombre: '',
         apellido: '',
     });
 
+    // Con esta función indicamos que el input estará escuchando los eventos o cambios que se generen por el usuario, con ... lo que hacemos en concatenar los datos que venian anteriormente de datos
     const handleInputChange= (event) =>{
         setDatos({
             ...datos,
@@ -14,7 +16,7 @@ const Formulario = () => {
         })
 
     }
-
+     // Con esta función evitamos que al darle clic al botón de enviar se recargue la pagina y se eliminen los datos y se envian los datos concatenados a la consola.
     const enviarDatos = (event) =>{
         event.preventDefault();
         console.log(datos.nombre + ' ' + datos.apellido)
