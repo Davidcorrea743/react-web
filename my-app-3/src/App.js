@@ -1,12 +1,12 @@
 import './App.css';
-import Formulario from './components/Formulario';
+import FormHook from './components/FormHook';
 
 
 function App() {
   return (
     <div  className='container mt-5'>
       
-      <Formulario />
+      <FormHook />
 
 
     </div>
